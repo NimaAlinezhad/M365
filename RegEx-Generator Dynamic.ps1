@@ -1,4 +1,13 @@
-﻿Add-Type -AssemblyName PresentationFramework
+#This PowerShell script provides a graphical user interface (GUI) for generating Regular Expressions (RegEx) based on user input.
+#It is particularly useful for creating patterns to match IDs, numbers, or similar structured data.
+#Users can enter a sample number or ID and optionally choose whether spaces within the input should be included in the generated RegEx.
+#The generated RegEx is formatted to be compatible with Microsoft Purview Data Loss Prevention (DLP) policies and Sensitivity Info Types,
+#making it an excellent tool for defining and customizing data patterns in compliance frameworks. For example, you can use this script to create RegEx patterns for matching custom IDs,
+#IBANs, or other sensitive data formats used in your organization.
+#Nima Alinezhad
+
+
+Add-Type -AssemblyName PresentationFramework
 
 function Generate-FlexibleRegEx {
     param (
